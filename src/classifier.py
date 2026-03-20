@@ -16,7 +16,7 @@ class HybridClassifer:
         print("Loading ML model... this may take a moment.")
         self.ml_classifier = pipeline(
             "zero-shot-classification", 
-            model="facebook/bart-large-mnli",
+            model="typeform/distilbert-base-uncased-mnli",
             framework="pt"
         )
         
